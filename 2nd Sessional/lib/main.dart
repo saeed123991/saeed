@@ -389,4 +389,71 @@ Card(
       ),
     );
   }
+}class beginner extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
 }
+class _HomePageState extends State<beginner> {
+  var userInput = '';
+  var answer = '';
+
+  // Array of button
+  final List<String> buttons = [
+    //'C',
+    //'+/-',
+    //'%',
+    //'DEL',
+    '7',
+    '8',
+    '9',
+    '/',
+    '4',
+    '5',
+    '6',
+    'x',
+    '1',
+    '2',
+    '3',
+    '-',
+    '0',
+    '.',
+    '=',
+    '+',
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: new AppBar(
+        title: new Text("Calculator"),
+      ), //AppBar
+      backgroundColor: Colors.white38,
+      body: Column(
+        children: <Widget>[
+          Expanded(
+            child: Container(
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Container(
+                      padding: EdgeInsets.all(20),
+                      alignment: Alignment.centerRight,
+                      child: Text(
+                        userInput,
+                        style: TextStyle(fontSize: 18, color: Colors.white),
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.all(15),
+                      alignment: Alignment.centerRight,
+                      child: Text(
+                        answer,
+                        style: TextStyle(
+                            fontSize: 30,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    )
+                  ]),
+            ),
+          ),
