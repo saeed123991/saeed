@@ -127,3 +127,83 @@ class _SplashScreenState extends State<SplashScreen> {
                     );
                   });
                 },
+
+               color: Colors.greenAccent,
+                height: 80.0,
+                textColor: Colors.black,
+                child: Text(
+                  'Beginner',
+                  style: TextStyle(
+                    color: Colors.black,
+
+                    fontSize: 37.0,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 20.0,
+                child: Divider(
+                  color: Colors.white,
+                ),
+              ),
+              FlatButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(60.0),
+                  side: BorderSide(
+                    color: Colors.blue,
+                  ),
+                ),
+                onPressed: () {
+                  setState(() {
+                    Navigator.push(
+                      context,
+                      new MaterialPageRoute(
+
+                      ),
+                    );
+                  });
+                },
+
+                color: Colors.greenAccent,
+                height: 80.0,
+                textColor: Colors.black,
+                child: Text(
+                  'Expert',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 37.0,
+                  ),
+                ),
+              ),
+            ],
+          ),
+
+    ),
+
+    ),
+    );
+  }
+}
+class contactus extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        appBar: AppBar(
+          centerTitle: true,
+          toolbarHeight: 100.0,
+          title: Text(
+            'Calculator',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 40.0,
+            ),
+          ),
+          backgroundColor: Colors.lightGreenAccent,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(
+              bottom: Radius.circular(50),
+            ),
+          ),
+        ),
