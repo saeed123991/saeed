@@ -311,3 +311,82 @@ class contactus extends StatelessWidget {
                   thickness: 4.0,
                 ),
               ),
+Card(
+                color: Colors.lightGreenAccent,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.black54,
+                    size: 30.0,
+                  ),
+                  title: Text(
+                    '+92304-0021244',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(60.0),
+                  side: BorderSide(
+                    color: Colors.blue,
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.lightGreenAccent,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.black54,
+                    size: 30.0,
+                  ),
+                  title: Text(
+                    'raotaimoor47@gmail.com',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(60.0),
+                  side: BorderSide(
+                    color: Colors.blue,
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.lightGreenAccent,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.home,
+                    color: Colors.black54,
+                    size: 30.0,
+                  ),
+                  title: Text(
+                    'Vehari',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(60.0),
+                  side: BorderSide(
+                    color: Colors.blue,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
