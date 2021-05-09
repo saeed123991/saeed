@@ -457,3 +457,76 @@ class _HomePageState extends State<beginner> {
                   ]),
             ),
           ),
+  Expanded(
+            flex: 3,
+            child: Container(
+              height:400,
+              width:350,
+              child: GridView.builder(
+                  itemCount: buttons.length,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 4),
+                  itemBuilder: (BuildContext context, int index) {
+                    // Clear Button
+                    if (index == 0) {
+                      return MyButton(
+                        buttontapped: () {
+                          setState(() {
+                            userInput = '';
+                            answer = '0';
+                          });
+                        },
+                        buttonText: buttons[index],
+                        color: Colors.white,
+                        textColor: Colors.black,
+                      );
+                    }
+
+                    // +/- button
+                    else if (index == 1) {
+                      return MyButton(
+                        buttonText: buttons[index],
+                        color: Colors.white,
+                        textColor: Colors.black,
+                      );
+                    }
+                    // % Button
+                    else if (index == 2) {
+                      return MyButton(
+                        buttontapped: () {
+                          setState(() {
+                            userInput += buttons[index];
+                          });
+                        },
+                        buttonText: buttons[index],
+                        color: Colors.white,
+                        textColor: Colors.black,
+                      );
+                    }
+                    // Delete Button
+                    else if (index == 3) {
+                      return MyButton(
+                        buttontapped: () {
+                          setState(() {
+                            userInput =
+                                userInput.substring(0, userInput.length - 1);
+                          });
+                        },
+                        buttonText: buttons[index],
+                        color: Colors.lightGreenAccent,
+                        textColor: Colors.black,
+                      );
+                    }
+                    // Equal_to Button
+                    else if (index == 18) {
+                      return MyButton(
+                        buttontapped: () {
+                          setState(() {
+                            equalPressed();
+                          });
+                        },
+                        buttonText: buttons[index],
+                        color: Colors.orange[700],
+                        textColor: Colors.white,
+                      );
+                    }
